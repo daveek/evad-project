@@ -11,19 +11,22 @@ Vue.use(VueRouter);
 const router = new VueRouter({
 	routes: [
         {
-			path: '/',
+            path: '/',
+            name: 'My Weather',
 			component: MyWeather
         },
         {
             path: '/skills',
+            name: 'My Skills',
             component: MyChartSkills
         },
         {
             path: '/shipping',
+            name: 'My Shipping',
             component: MyShippingCalculator
         },
         {
-			path: '/content',
+			path: 'content',
 			component: MyMenu,
 			children: [
 				{

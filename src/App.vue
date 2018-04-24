@@ -19,7 +19,9 @@
     </v-toolbar>
 
     <v-content>
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
       <!-- 
       <my-weather />
       <my-shipping-calculator /> 
@@ -51,7 +53,7 @@ export default {
   },
   data() {
     return {
-      openDrawer: true,
+      openDrawer: false,
     };
   },
 };

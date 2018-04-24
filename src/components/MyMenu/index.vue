@@ -7,7 +7,6 @@
     @input="$emit('input', $event)"
   >
     <v-list>
-
       <template v-for="item in items">
         <my-menu-item
           v-if="!item.subitems || item.subitems.length === 0"
@@ -24,11 +23,13 @@
           <my-menu-item
             slot="activator"
             :title="item.title"
+            :hreg="item.href"
           />
           <my-menu-item
             v-for="subitem in item.subitems"
             :key="subitem.title"
             :title="subitem.title"
+            :hreg="subitem.href"
           />
 
         </v-list-group>
@@ -105,4 +106,9 @@ export default {
 .icon-fix .list__group__header__prepend-icon {
   display: none;
 }
+.bg-custom {   
+    background-image: url('./../../assets/img/navegacion.png');   
+    background-size: cover;
+    padding: 0 2em;
+  }
 </style>
