@@ -3,6 +3,7 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import colors from 'vuetify/es5/util/colors';
 import router from './router/index.js';
+import store from './store/index.js';
 
 import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
@@ -39,6 +40,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  store,
   apolloProvider,
   render: h => h(App),
 });

@@ -2,7 +2,7 @@ import * as services from '../services'
 
 export const fetchCities = function ({dispatch}) {
   // Call the messages service on the server via websocket
-  services.messageService.find({}).then(cities => {
+  services.cityService.find({}).then(cities => {
     dispatch('FETCH_CITIES', cities.data)
   })
 }
