@@ -23,7 +23,7 @@ export default {
       Title: 'Das Wetter',
       dataApi: 'aae97860de78632108ecc73036d6d17c',
       cityName: 'Madrid',
-      lang: 'de',
+      lang: 'es',
       weatherRes: null
     };
   },
